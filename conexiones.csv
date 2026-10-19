@@ -1,0 +1,17 @@
+﻿Equipo A,Puerto A,IP A,Equipo B,Puerto B,IP B,Cable,DCE
+R-OSPF-1,Serial2/0,10.0.0.1/30,R-OSPF-2,Serial2/0,10.0.0.2/30,Serial DCE,R-OSPF-1
+R-CENTRAL,Serial2/0,10.0.0.5/30,R-OSPF-1,Serial3/0,10.0.0.6/30,Serial DCE,R-CENTRAL
+R-CENTRAL,Serial3/0,10.0.0.9/30,R-OSPF-2,Serial3/0,10.0.0.10/30,Serial DCE,R-CENTRAL
+R-EIGRP-1,Serial2/0,10.0.0.13/30,R-EIGRP-2,Serial2/0,10.0.0.14/30,Serial DCE,R-EIGRP-1
+R-CENTRAL,Serial6/0,10.0.0.17/30,R-EIGRP-1,Serial3/0,10.0.0.18/30,Serial DCE,R-CENTRAL
+R-CENTRAL,Serial7/0,10.0.0.21/30,R-EIGRP-2,Serial3/0,10.0.0.22/30,Serial DCE,R-CENTRAL
+R-OSPF-1,FastEthernet0/0,,SW-OSPF-1,FastEthernet0/1,,Copper straight-through,
+R-OSPF-2,FastEthernet0/0,,SW-OSPF-2,FastEthernet0/1,,Copper straight-through,
+R-EIGRP-1,FastEthernet0/0,,SW-EIGRP-1,FastEthernet0/1,,Copper straight-through,
+R-EIGRP-2,FastEthernet0/0,,SW-EIGRP-2,FastEthernet0/1,,Copper straight-through,
+SW-OSPF-2,FastEthernet0/2,,PC-OSPF-2-LAN,FastEthernet0,192.168.0.10,Copper straight-through,
+SW-OSPF-1,FastEthernet0/2,,PC-OSPF-1-10,FastEthernet0,192.168.1.10,Copper straight-through,
+SW-OSPF-1,FastEthernet0/3,,PC-OSPF-1-30,FastEthernet0,192.168.1.66,Copper straight-through,
+SW-EIGRP-2,FastEthernet0/2,,PC-EIGRP-2-LAN,FastEthernet0,172.16.0.10,Copper straight-through,
+SW-EIGRP-1,FastEthernet0/2,,PC-EIGRP-1-10,FastEthernet0,172.16.0.130,Copper straight-through,
+SW-EIGRP-1,FastEthernet0/3,,PC-EIGRP-1-20,FastEthernet0,172.16.0.194,Copper straight-through,

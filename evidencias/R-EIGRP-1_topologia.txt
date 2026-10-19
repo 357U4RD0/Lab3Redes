@@ -1,0 +1,29 @@
+
+IP-EIGRP Topology Table for AS 100/ID(172.16.0.193)
+
+Codes: P - Passive, A - Active, U - Update, Q - Query, R - Reply,
+       r - Reply status
+
+P 10.0.0.0/30, 1 successors, FD is 412160
+         via Rstatic (412160/281600)
+P 10.0.0.4/30, 1 successors, FD is 412160
+         via Rstatic (412160/281600)
+P 10.0.0.8/30, 1 successors, FD is 412160
+         via Rstatic (412160/281600)
+P 10.0.0.12/30, 1 successors, FD is 51200
+         via Connected, Serial2/0
+P 10.0.0.16/30, 1 successors, FD is 156160
+         via Connected, Serial3/0
+P 10.0.0.20/30, 2 successors, FD is 158720
+         via 10.0.0.17 (158720/28160), Serial3/0
+         via 10.0.0.14 (181760/156160), Serial2/0
+P 172.16.0.0/25, 2 successors, FD is 53760
+         via 10.0.0.14 (53760/28160), Serial2/0
+         via 10.0.0.17 (161280/30720), Serial3/0
+P 172.16.0.128/26, 1 successors, FD is 28160
+         via Connected, FastEthernet0/0.10
+P 172.16.0.192/26, 1 successors, FD is 28160
+         via Connected, FastEthernet0/0.20
+P 192.168.0.0/20, 1 successors, FD is 668160
+         via 10.0.0.17 (668160/537600), Serial3/0
+R-EIGRP-1#

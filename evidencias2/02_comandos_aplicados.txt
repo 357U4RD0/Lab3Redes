@@ -1,0 +1,6 @@
+R-CENTRAL(config-router)#exit
+R-CENTRAL(config)#ip route 172.16.0.0 255.255.240.0 null0 250
+R-CENTRAL(config)#router ospf 1
+R-CENTRAL(config-router)#no redistribute eigrp 100
+R-CENTRAL(config-router)#redistribute static metric 20 metric-type 1 subnets
+R-CENTRAL(config-router)#
